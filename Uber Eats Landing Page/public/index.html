@@ -1,0 +1,187 @@
+<html>
+    <head>
+        <title>Uber Eats Web App</title>
+        <link type = "text/css" rel = "stylesheet" href = "main.css" />
+    </head>
+    <body class = "bg-green-100 text-gray-600 font-body">
+        <div class = "grid md:grid-cols-3">
+          <div class = "md:col-span-1 md:flex md:justify-end">  
+            <nav>
+                <div class = "flex justify-between items-center">
+                    <h1 class = "font-bold uppercase text-green-900 p-4">
+                        <a href = "/">Uber Eats</a>
+                    </h1>
+                    <div class = "px-4 cursor-pointer md:hidden" id = "tray-icon">
+                        <svg class = "w-6" fill = "none" stroke = "currentColor" viewBox = "0 0 24 24" xmlns = "http://www.w3.org/2000/svg">
+                        <path stroke-linecap = "round" stroke-linejoin = "round" stroke-width = "2" d = "M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </div>
+                </div>
+                <ul class = "mt-6 hidden md:block" id = "menu-options">
+                    <li class = "text-red-700 font-bold py-2">
+                        <a href = "#"  class = "px-4 flex justify-end border-r-2 border-primary">
+                            <span class = "pr-4">Home</span>
+                            <svg class = "w-5 inline-block mr-4" fill = "none" stroke = "currentColor" viewBox = "0 0 24 24" xmlns = "http://www.w3.org/2000/svg">
+                            <path stroke-linecap = "round" stroke-linejoin = "round" stroke-width = "2" d = "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 
+                            2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                       </a>
+                    </li>
+                    <li class = "py-2">
+                        <a href = "#" class = "px-4 flex justify-end">
+                            <span class = "pr-4">About</span>
+                            <svg class = "w-5 inline-block mr-4" fill = "none" stroke = "currentColor" viewBox = "0 0 24 24" xmlns = "http://www.w3.org/2000/svg">
+                            <path stroke-linecap = "round" stroke-linejoin = "round" stroke-width = "2" d = "M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 
+                            2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </a>
+                    </li>
+                    <li class = "py-2">
+                        <a href = "#" class = "px-4 flex justify-end">
+                            <span class = "pr-4">Contact</span>
+                            <svg class = "w-5 inline-block mr-4" fill = "none" stroke = "currentColor" viewBox = "0 0 24 24" xmlns = "http://www.w3.org/2000/svg">
+                            <path stroke-linecap = "round" stroke-linejoin = "round" stroke-width = "2" d = "M8 4H6a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-2m-4-1v8m0 
+                            0l3-3m-3 3L9 8m-5 5h2.586a1 1 0 01.707.293l2.414 2.414a1 1 0 00.707.293h3.172a1 1 0 00.707-.293l2.414-2.414a1 1 0 01.707-.293H20"></path></svg>
+                        </a>
+                    </li>   
+                </ul>
+            </nav>
+          </div> 
+          <main class = "px-16 py-6 bg-gray-200 md:col-span-2"">
+              <div class = "flex justify-end">
+                  <a href = "#" class = "button text-primary border-primary border-2 hover:bg-primary hover:text-white transition ease-out duration-500">
+                      Log In
+                  </a>
+                  <a href = "#" class = "button text-primary ml-2 border-primary border-2 hover:bg-primary hover:text-white transition ease-out duration-500">
+                      Sign Up
+                  </a>
+              </div>
+              <header>
+                  <h2 class = "text-red-700 text-6xl font-semibold">Recipes</h2>
+                  <h3 class = "text-2xl font-semibold">For Ninjas</h3>
+              </header>
+              <div>
+                  <h4 class = "font-bold m-12 pb-2 border-b border-gray-600">Latest Recipes</h4>
+                  <div class = "mt-8 grid lg:grid-cols-3 gap-10">
+                        <div class = "card hover:shadow-lg">
+                          <img src = "images/fruit.png" class = "w-full h-32 sm: h-48 object-cover">
+                          <div class = "m-4">
+                              <span class = "font-bold">Full Meal Fruit Brew Custard</span>
+                              <span class = "block text-sm">By Marco Veteratti</span>
+                          </div>
+                          <div class = "badge">
+                            <svg class = "w-5 inline-block" fill = "none" stroke = "currentColor" viewBox = "0 0 24 24" xmlns = "http://www.w3.org/2000/svg">
+                            <path stroke-linecap = "round" stroke-linejoin = "round" stroke-width = "2" d = "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>20 Mins</span>
+                          </div>
+                        </div>  
+                        <div class = "card hover:shadow-lg">
+                            <img src = "images/soup.jpg" class = "w-full h-32 sm: h-48 object-cover">
+                            <div class = "m-4">
+                                <span class = "font-bold">Full Bowl Hot Red Ginger Soup</span>
+                                <span class = "block text-sm">By de La Antonio</span>
+                            </div>
+                            <div class = "badge">
+                                <svg class = "w-5 inline-block" fill = "none" stroke = "currentColor" viewBox = "0 0 24 24" xmlns = "http://www.w3.org/2000/svg">
+                                <path stroke-linecap = "round" stroke-linejoin = "round" stroke-width = "2" d = "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>15 Mins</span>
+                            </div>
+                        </div>
+                        <div class = "card hover:shadow-lg">
+                            <img src = "images/bread.jpg" class = "w-full h-32 sm: h-48 object-cover">
+                            <div class = "m-4">
+                                <span class = "font-bold">Bread Meal With Pickled Spagetti</span>
+                                <span class = "block text-sm">By Henry Johns</span>
+                            </div>
+                            <div class = "badge">
+                                <svg class = "w-5 inline-block" fill = "none" stroke = "currentColor" viewBox = "0 0 24 24" xmlns = "http://www.w3.org/2000/svg">
+                                <path stroke-linecap = "round" stroke-linejoin = "round" stroke-width = "2" d = "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>30 Mins</span>
+                            </div>
+                        </div>
+                        <div class = "card hover:shadow-lg">
+                            <img src = "images/pasta.png" class = "w-full h-32 sm: h-48 object-cover">
+                            <div class = "m-4">
+                                <span class = "font-bold">Pasta Italiano With Red Chilli Sauce</span>
+                                <span class = "block text-sm">By Samuel Longhorn</span>
+                            </div>
+                            <div class = "badge">
+                                <svg class = "w-5 inline-block" fill = "none" stroke = "currentColor" viewBox = "0 0 24 24" xmlns = "http://www.w3.org/2000/svg">
+                                <path stroke-linecap = "round" stroke-linejoin = "round" stroke-width = "2" d = "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>40 Mins</span>
+                            </div>
+                        </div>
+                        <div class = "card hover:shadow-lg">
+                            <img src = "images/pizza.jpg" class = "w-full h-32 sm: h-48 object-cover">
+                            <div class = "m-4">
+                                <span class = "font-bold">Full Special Macaroni Pizza</span>
+                                <span class = "block text-sm">By de La Busquets</span>
+                            </div>
+                            <div class = "badge">
+                                <svg class = "w-5 inline-block" fill = "none" stroke = "currentColor" viewBox = "0 0 24 24" xmlns = "http://www.w3.org/2000/svg">
+                                <path stroke-linecap = "round" stroke-linejoin = "round" stroke-width = "2" d = "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>25 Mins</span>
+                            </div>
+                        </div>
+                        <div class = "card hover:shadow-lg">
+                            <img src = "images/egg.jpg" class = "w-full h-32 sm: h-48 object-cover">
+                            <div class = "m-4">
+                                <span class = "font-bold">Egg Meal With Fat Salty Omlette</span>
+                                <span class = "block text-sm">By Bucard Leno</span>
+                            </div>
+                            <div class = "badge">
+                                <svg class = "w-5 inline-block" fill = "none" stroke = "currentColor" viewBox = "0 0 24 24" xmlns = "http://www.w3.org/2000/svg">
+                                <path stroke-linecap = "round" stroke-linejoin = "round" stroke-width = "2" d = "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>15 Mins</span>
+                            </div>
+                        </div>
+                  </div>
+              </div>
+              <h4 class = "font-bold m-12 pb-2 border-b border-gray-600">Most Popular</h4>
+              <div class = "mt-8">
+                <div class = "mt-8 grid lg:grid-cols-3 gap-10">
+                    <div class = "card hover:shadow-lg">
+                      <img src = "images/pancake.png" class = "w-full h-32 sm: h-48 object-cover">
+                      <div class = "m-4">
+                          <span class = "font-bold">Honey Sprinkled Rusty Pancakes</span>
+                          <span class = "block text-sm">By Frederico Gallego</span>
+                      </div>
+                      <div class = "badge">
+                            <svg class = "w-5 inline-block" fill = "none" stroke = "currentColor" viewBox = "0 0 24 24" xmlns = "http://www.w3.org/2000/svg">
+                            <path stroke-linecap = "round" stroke-linejoin = "round" stroke-width = "2" d = "M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path></svg>
+                            <span>17 Mins</span>
+                      </div>
+                    </div>  
+                    <div class = "card hover:shadow-lg">
+                        <img src = "images/spagetti.jpg" class = "w-full h-32 sm: h-48 object-cover">
+                        <div class = "m-4">
+                            <span class = "font-bold">Hunan Mixed Pork Spagetti</span>
+                            <span class = "block text-sm">By Franco Bulettus</span>
+                        </div>
+                        <div class = "badge">
+                            <svg class = "w-5 inline-block" fill = "none" stroke = "currentColor" viewBox = "0 0 24 24" xmlns = "http://www.w3.org/2000/svg">
+                            <path stroke-linecap = "round" stroke-linejoin = "round" stroke-width = "2" d = "M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path></svg>
+                            <span>33 Mins</span>
+                        </div>
+                    </div>
+                    <div class = "card hover:shadow-lg">
+                        <img src = "images/fries.png" class = "w-full h-32 sm: h-48 object-cover">
+                        <div class = "m-4">
+                            <span class = "font-bold">Sneak French Fries With Cheese</span>
+                            <span class = "block text-sm">By Christopher Nolan</span>
+                        </div>
+                        <div class = "badge">
+                            <svg class = "w-5  inline-block" fill = "none" stroke = "currentColor" viewBox = "0 0 24 24" xmlns = "http://www.w3.org/2000/svg">
+                            <path stroke-linecap = "round" stroke-linejoin = "round" stroke-width = "2" d = "M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path></svg>
+                            <span>22 Mins</span>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class = "flex justify-end">
+                  <div class = "button bg-secondary-100 text-secondary-200 mt-6 hover:shadow-inner transform hover:scale-75">
+                      Load More
+                  </div>
+              </div>
+          </main>
+        </div>
+        <script type = "text/javascript" src = "hook.js"></script>
+    </body>
+</html>
