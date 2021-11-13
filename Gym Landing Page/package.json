@@ -1,0 +1,14 @@
+{
+  "name": "poweroom",
+  "version": "1.0.0",
+  "description": "A website for a gym.",
+  "main": "",
+  "scripts": {
+    "compile": "tailwindcss -i ./styles/starter.css -o ./public/core.css"
+  },
+  "author": "dg",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^2.2.19"
+  }
+}
